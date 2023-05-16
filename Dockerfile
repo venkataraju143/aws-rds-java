@@ -1,4 +1,4 @@
 FROM tomcat:8.5.47-jdk8-openjdk
-WORKDIR /usr/local/tomcat/webapps/
-COPY *.war ~/usr/local/tomcat/webapps/
+WORKDIR /usr/local/tomcat/webapps
+COPY *.war .
 CMD ["catalina.sh", "run"]
