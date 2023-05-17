@@ -1,3 +1,4 @@
 FROM tomcat:8.0-alpine
-COPY . /usr/local/tomcat/webapps
+WORKDIR /usr/local/tomcat/webapps
+ADD target/*.war .
 CMD ["catalina.sh", "run"]
